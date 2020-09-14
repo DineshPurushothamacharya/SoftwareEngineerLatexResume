@@ -2,8 +2,11 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass{awesome-cv}
+\documentclass[18pt, a4paper]{awesome-cv}
 \urlstyle{same}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=1.5cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -39,16 +42,17 @@
 %     Personal Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Essentials
-\name{John}{Doe}
-\address{1600 Pennsylvania Ave, Washington DC}
-\mobile{555-555-5555} 
+\name{Dinesh}{Purushothamacharya}
+\address{#218, Kalyan Nagar, Bangalore 560043, India}
+\mobile{(+91) 9980033064} 
 %%% Social
-\email{johndoe@gmail.com}
-\homepage{google}
-\github{johndoe}
-\linkedin{johndoe}
+\email{Dinesh.Purushothamacharya@outlook.com}
+% \homepage{google}
+%\github{DineshPurushothamacharya}
+\linkedin{dineshpurushothamacharya}
+\stackoverflow{10863748}{dinesh-acharya}
 %%% Optionals
-\position{Software Engineer}
+\position{Associate Lead Software Engineer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Content
@@ -60,13 +64,17 @@
 \makecvheader
 
 %%% Import contents
+\import{\sectiondir}{summary.tex}
+\import{\sectiondir}{attributes.tex}
 \import{\sectiondir}{experience.tex}
 \import{\sectiondir}{projects.tex}
+%\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{honors.tex}
 \import{\sectiondir}{education.tex}
-\import{\sectiondir}{skills.tex}
+
 
 \makecvfooter
-  {}
-  {John Doe~~~·~~~Résumé}
-  {}
+  {\today}
+  {Dinesh Purushothamacharya}
+  {\thepage}
 \end{document}
