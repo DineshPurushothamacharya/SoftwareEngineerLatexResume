@@ -2,11 +2,11 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[18pt, a4paper]{awesome-cv}
+\documentclass[20pt, a4paper]{awesome-cv}
 \urlstyle{same}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=1.5cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=1.6cm, right=1.4cm, bottom=2.5cm, footskip=.5cm}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -26,7 +26,7 @@
 %\definecolor{text}{HTML}{414141}
 %\definecolor{graytext}{HTML}{414141}
 %\definecolor{lighttext}{HTML}{414141}
-
+\setbool{acvSectionColorHighlight}{true}
 %%% Override a separator for social in formations in header(default: ' | ')
 %\headersocialsep[\quad\textbar\quad]
 
@@ -63,18 +63,18 @@
 %%% Make a header for CV with personal data
 \makecvheader
 
+\makecvfooter
+  {\today}
+  {Dinesh Purushothamacharya~~~·~~~Résumé}
+  {\thepage}
+
 %%% Import contents
 \import{\sectiondir}{summary.tex}
 \import{\sectiondir}{attributes.tex}
 \import{\sectiondir}{experience.tex}
-\import{\sectiondir}{projects.tex}
-%\import{\sectiondir}{skills.tex}
+% \import{\sectiondir}{projects.tex}
+\import{\sectiondir}{skills.tex}
 \import{\sectiondir}{honors.tex}
 \import{\sectiondir}{education.tex}
 
-
-\makecvfooter
-  {\today}
-  {Dinesh Purushothamacharya}
-  {\thepage}
 \end{document}

@@ -262,6 +262,7 @@
 \newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
+\newcommand*{\lettersectionstyle}[1]{{\fontsize{16pt}{1em}\headerfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
 \newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -597,7 +598,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{13.0cm} R{3.5cm}}
 }{
     \end{tabular*}
   \end{center}
@@ -642,9 +643,9 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{
-  \vspace{-4mm}
+  \vspace{-1mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=-2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{
@@ -653,6 +654,18 @@
   \vspace{-2mm}
 }
 
+% Define an environment for cvitems(for cventry)
+\newenvironment{cvskillitems}{
+  \vspace{-1mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=6ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{
+  \end{itemize}
+  \end{justify}
+  \vspace{-2mm}
+}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
@@ -663,13 +676,23 @@
 }{
 }
 
+% Define a section for the cover letter
+% Usage: \lettersection{<section-title>}
+\newcommand{\lettersection}[1]{
+  \par\addvspace{1.5ex}
+  \phantomsection{}
+  \lettersectionstyle{#1}
+  \color{gray}\vhrulefill{0.9pt}
+  \par\nobreak\addvspace{1ex}
+}
+
 % Define a paragraph for cvletter
 % Usage: \cvparagraph{<paragraph-title>}
 \newenvironment{cvparagraph}{%
-  \vspace{\acvSectionContentTopSkip}
-  \vspace{-3mm}
+  %\vspace{\acvSectionContentTopSkip}
+  \vspace{-1mm}
   \paragraphstyle
-}{%
+}{
   \par
   \vspace{2mm}
 }

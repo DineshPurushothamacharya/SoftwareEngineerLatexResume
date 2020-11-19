@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.11)  13 SEP 2020 13:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.9.11)  20 NOV 2020 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,13 +440,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.641 }
+l.642 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/import/import.sty
+)
+
+! Package etoolbox Error: Boolean '\ifacvSectionColorHighlight' undefined.
+
+See the etoolbox package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \setbool{acvSectionColorHighlight}{true}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/01/22  v 6.0
 )
 ! Illegal parameter number in definition of \@address.
@@ -460,7 +474,7 @@ are all screwed up? I'm going to assume that you meant ##.
 
 
 LaTeX Warning: Unused global option(s):
-    [18pt].
+    [20pt].
 
 (./resume.aux)
 \openout1 = `resume.aux'.
@@ -497,14 +511,14 @@ LaTeX Info: Redefining \selectfont on input line 62.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(39.83368pt, 517.84052pt, 39.83368pt)
-* v-part:(T,H,B)=(42.67912pt, 751.15268pt, 51.21504pt)
+* v-part:(T,H,B)=(45.52458pt, 728.39038pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=517.84052pt
-* \textheight=751.15268pt
+* \textheight=728.39038pt
 * \oddsidemargin=-32.43631pt
 * \evensidemargin=-32.43631pt
-* \topmargin=-66.59087pt
+* \topmargin=-63.7454pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -604,32 +618,21 @@ I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-(./resume/summary.tex
-Runaway argument?
-! Paragraph ended before \paragraphstyle was complete.
-<to be read again> 
-                   \par 
-l.7 
-    
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+(./resume/summary.tex) (./resume/attributes.tex
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 15.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 15.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 15.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 15.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 15.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 15.
 
-) (./resume/attributes.tex
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 13.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 13.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 13.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 13.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 13.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 13.
-
-Underfull \hbox (badness 10000) in alignment at lines 13--13
+Underfull \hbox (badness 10000) in alignment at lines 15--15
 [][] 
  []
 
@@ -637,22 +640,21 @@ Underfull \hbox (badness 10000) in alignment at lines 13--13
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 32.
+t line 30.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 32.
-) (./resume/projects.tex) (./resume/honors.tex
-[1
-
-]) (./resume/education.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-
+t line 30.
+) (./resume/skills.tex
 
 LaTeX Font Warning: Font shape `TU/AbrilFatface(0)/m/sc' undefined
-(Font)              using `TU/AbrilFatface(0)/m/n' instead on input line 80.
+(Font)              using `TU/AbrilFatface(0)/m/n' instead on input line 2.
 
-[2]
+[1
+
+]) (./resume/honors.tex) (./resume/education.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+ [2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./resume.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
@@ -665,12 +667,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18765 strings out of 479418
- 330623 string characters out of 5884585
+ 18769 strings out of 479418
+ 330675 string characters out of 5884585
  783459 words of memory out of 5000000
- 36002 multiletter control sequences out of 15000+600000
+ 36006 multiletter control sequences out of 15000+600000
  533894 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 54i,11n,112p,812b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,11n,112p,812b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (2 pages).
